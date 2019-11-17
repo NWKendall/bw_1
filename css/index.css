@@ -187,7 +187,7 @@ p {
   cursor: pointer;
   transform: rotateY(-360deg);
   transition-duration: 1000ms;
-  color: #A588B3;
+  color: #FFA820;
 }
 .container .top .logo a {
   text-decoration: none;
@@ -195,7 +195,7 @@ p {
 .container .top .nav {
   display: flex;
   justify-content: space-around;
-  width: 35%;
+  width: 25%;
   margin: 2%;
 }
 .container .top .nav a {
@@ -203,6 +203,10 @@ p {
   font-size: 1.5rem;
   color: #A1E6DF;
   text-decoration: none;
+}
+.container .top .nav a:hover {
+  color: #FFA820;
+  text-decoration: underline;
 }
 .container footer {
   margin: 0 auto;
@@ -214,9 +218,9 @@ p {
   justify-content: center;
   margin: 0 auto;
   line-height: 5rem;
-  padding: 1%;
+  color: #28590C;
 }
-.container footer .socialMedia i {
+.container footer .socialMedia a {
   margin: 0 2%;
 }
 .container footer .copyright {
@@ -242,7 +246,6 @@ p {
   height: 500px;
 }
 .container header .banner .callToAction {
-  left: 30%;
   width: 40%;
   line-height: 3rem;
   background-color: #97BE11;
@@ -252,7 +255,7 @@ p {
 }
 .container header .banner .callToAction h4 {
   font-size: 2rem;
-  color: white;
+  color: whitesmoke;
   padding: 5%;
 }
 .container header .banner .callToAction .signup {
@@ -290,18 +293,15 @@ p {
   margin: 5% 0;
   padding: 2%;
   background-color: #DFE9AC;
-  border: 2px solid #FFA820;
 }
 .container .middle .feat {
   width: 100%;
   text-align: center;
-}
-.container .middle .feat h2 {
   color: #28590C;
 }
 .container .middle .feat i {
   font-size: 3rem;
-  margin: 2% 0;
+  margin: 8% 0;
   color: #FFA820;
 }
 .container .why {
@@ -318,4 +318,100 @@ p {
   text-align: center;
   z-index: 1;
   margin: 2% 0;
+}
+header .team_banner {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  background: url('../img/anna-pelzer-IGfIGP5ONV0-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+header .team_banner .team_box {
+  left: 30%;
+  width: 40%;
+  line-height: 3rem;
+  background-color: #97BE11;
+  text-align: center;
+  border-radius: 5px;
+  border: 2px solid #28590C;
+}
+header .team_banner .team_box h4 {
+  font-size: 2rem;
+  color: white;
+  padding: 5%;
+}
+header .team_banner .team_box .signup {
+  color: #FFA820;
+  background-color: #DFE9AC;
+  width: 80%;
+  font-size: 1.5rem;
+  border: 2px solid #FFA820;
+  border-radius: 5%;
+  text-align: center;
+  padding: 5%;
+  font-weight: bold;
+}
+header .team_banner .team_box .signup:hover {
+  cursor: pointer;
+  color: #DFE9AC;
+  background-color: #FFA820;
+  border-color: #28590C;
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: url('../img/brooke-lark-08bOYnH_r_E-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-flow: row wrap;
+  padding: 2%;
+}
+.wrapper .card {
+  margin: 1%;
+  width: 30%;
+  text-align: center;
+  background-color: #DFE9AC;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  border-radius: 3%;
+}
+.wrapper .card h2 {
+  width: 100%;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 3% 0;
+}
+.wrapper .card h3 {
+  width: 100%;
+  margin: 2% 0;
+  font-size: 2rem;
+  font-style: italic;
+}
+.wrapper .card .prof-links {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.wrapper .card .prof-links i {
+  font-size: 3rem;
+  color: #28590C;
+}
+.wrapper .card .prof-links i:hover {
+  cursor: pointer;
+  color: #FFA820;
+}
+.wrapper .card .prof-links a {
+  margin: 2% 10%;
+}
+.wrapper .card:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
