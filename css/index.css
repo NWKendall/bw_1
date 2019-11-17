@@ -131,6 +131,7 @@ table {
   padding: 0;
   margin: 0;
   max-width: 100%;
+  border: 1px solid grey !important;
 }
 html {
   font-size: 62.5%;
@@ -200,39 +201,54 @@ p {
   color: #A1E6DF;
   text-decoration: none;
 }
-.container .copyright {
+.container footer {
+  margin: 0 auto;
+}
+.container footer .socialMedia {
+  background-color: #DFE9AC;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  line-height: 5rem;
+  padding: 1%;
+}
+.container footer .socialMedia i {
+  margin: 0 2%;
+}
+.container footer .copyright {
   text-align: center;
   background-color: #28590C;
   color: #A1E6DF;
   font-size: 1rem;
   padding: 1% 0;
 }
-.container .banner {
+.container header {
+  display: inline-block;
+}
+.container header .banner {
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
 }
-.container .banner .main-img {
-  display: block;
-  width: 100%;
-}
-.container .banner .callToAction {
+.container header .banner .callToAction {
   position: relative;
-  bottom: 400px;
+  bottom: 350px;
+  left: 30%;
   width: 40%;
   line-height: 3rem;
   background-color: #97BE11;
   text-align: center;
   border-radius: 5px;
 }
-.container .banner .callToAction h4 {
+.container header .banner .callToAction h4 {
   font-size: 2rem;
   color: white;
   padding: 5%;
 }
-.container .banner .callToAction .signup {
+.container header .banner .callToAction .signup {
   color: #FFA820;
   background-color: #DFE9AC;
   width: 80%;
@@ -243,13 +259,14 @@ p {
   padding: 5%;
   font-weight: bold;
 }
-.container .banner .callToAction .signup:hover {
+.container header .banner .callToAction .signup:hover {
   cursor: pointer;
   color: #DFE9AC;
   background-color: #FFA820;
 }
 .container .about {
-  margin: 5%;
+  margin: 2% 0;
+  width: 100%;
 }
 .container .about h2 {
   text-align: center;
