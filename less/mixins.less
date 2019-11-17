@@ -1,18 +1,18 @@
 // Mixins Here
 
 .btn-format(@size, @bord-rad) { // mixin para 1
-    color: @porcelain;
-    background-color: @btn-bg-color;
+    color: #FFA820;
+    background-color: @btn-bg;
     width: @size;
-    line-height: 2.5rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
+    border: 1px solid #FFA820;
     border-radius: @bord-rad;
     text-align: center;
     font-weight: bold;
         &:hover {
         cursor: pointer;
-        color: @btn-bg-color;
-        background-color: @porcelain;
+        color: @btn-bg;
+        background-color: #FFA820;
     }
 }
 

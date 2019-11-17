@@ -1,1 +1,40 @@
 // Navigation code here
+.container{
+
+    .top {
+        display: flex;
+        justify-content: space-between;
+        background-color: @main-bg-color;
+        align-items: center; 
+        width: 800px;
+        position: fixed;
+        margin: 0 auto;     
+        z-index: 500;  
+
+        .logo {
+            display: flex;
+            justify-content: flex-start;
+            margin: 2%;
+
+            h1 {
+                color: @main-h-color;
+                font-size: 2rem;
+                .spin(#A588B3);                
+            }
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-around;
+            width: 35%;
+            margin: 2%;
+
+            a {
+                margin: 2%;
+                font-size: 1.5rem;
+                color: @main-h-color;
+                text-decoration: none;
+            }        
+        } // close nav
+    } // close top
+} //closes container

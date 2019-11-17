@@ -131,7 +131,7 @@ table {
   padding: 0;
   margin: 0;
   max-width: 100%;
-  border: 0.5px solid grey !important;
+  border: 1px solid grey !important;
 }
 html {
   font-size: 62.5%;
@@ -164,27 +164,83 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-.top {
+.container .top {
   display: flex;
   justify-content: space-between;
-  background-color: #31665F;
+  background-color: #28590C;
   align-items: center;
+  width: 800px;
+  position: fixed;
+  margin: 0 auto;
+  z-index: 500;
 }
-.top .logo {
+.container .top .logo {
   display: flex;
   justify-content: flex-start;
   margin: 2%;
 }
-.top .logo h1 {
+.container .top .logo h1 {
   color: #A1E6DF;
   font-size: 2rem;
 }
-.top .nav {
+.container .top .logo h1:hover {
+  cursor: pointer;
+  transform: rotateY(-360deg);
+  transition-duration: 1000ms;
+  color: #A588B3;
+}
+.container .top .nav {
   display: flex;
   justify-content: space-around;
-  width: 30%;
+  width: 35%;
   margin: 2%;
 }
-.top .nav a {
+.container .top .nav a {
   margin: 2%;
+  font-size: 1.5rem;
+  color: #A1E6DF;
+  text-decoration: none;
+}
+.container .banner {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+}
+.container .banner .main-img {
+  display: block;
+  width: 100%;
+}
+.container .banner .callToAction {
+  position: relative;
+  bottom: 400px;
+  width: 25%;
+  line-height: 2rem;
+  background-color: #97BE11;
+  text-align: center;
+  border-radius: 5px;
+}
+.container .banner .callToAction h4 {
+  font-size: 1.5rem;
+  color: white;
+  margin: 1% 0;
+  padding: 2%;
+}
+.container .banner .callToAction .signup {
+  color: #FFA820;
+  background-color: #DFE9AC;
+  width: 80%;
+  font-size: 1rem;
+  border: 1px solid #FFA820;
+  border-radius: 5%;
+  text-align: center;
+  font-weight: bold;
+  margin: 2% 0;
+  padding: 2%;
+}
+.container .banner .callToAction .signup:hover {
+  cursor: pointer;
+  color: #DFE9AC;
+  background-color: #FFA820;
 }

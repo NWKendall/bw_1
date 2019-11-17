@@ -1,40 +1,48 @@
 // Home Content
 
-.top {
-    display: flex;
-    justify-content: space-between;
-    background-color: #31665F;
-    align-items: center;
-
-    
-
-    .logo {
+.container{
+      
+    .banner {
         display: flex;
-        justify-content: flex-start;
-        margin: 2%;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
 
-     
-        h1 {
+        .main-img {
+            display: block;
+            width: 100%;
             
-            color: #A1E6DF;
-            font-size: 2rem;
         }
+
+        .callToAction{
+            position: relative;
+            bottom: 400px;
+            width: 25%;
+            line-height: 2rem;
+            background-color: #97BE11;
+            text-align: center;
+            border-radius: 5px;
+            
+            
+            h4{
+                font-size: 1.5rem;
+                color:white;
+                margin: 1% 0;
+                padding: 2%;
+            }
+
+            .signup {
+                .btn-format(80%, 5%);
+                margin: 2% 0;
+                padding: 2%;
+            }
+
+        }
+
     }
-    .nav {
-        display: flex;
-        justify-content: space-around;
-        width: 30%;
-        margin: 2%;
 
+// row, figure+ caption
+// banner, main-img + cta
 
-
-        a {
-            margin: 2%;
-            color: 
-
-        }
-
-       
-       
-    } // close nav
-} // close top
+} //closes container
