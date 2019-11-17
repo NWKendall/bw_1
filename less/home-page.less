@@ -1,7 +1,7 @@
 // Home Content
 .container{
     header {
-        display: inline-block;
+     
 
         .banner {
             display: flex;
@@ -9,20 +9,19 @@
             flex-direction: column;
             justify-content: center;
             margin: 0 auto;
-
-            .main-img{
-            }
+            background: url('../img/share_meal.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height:500px;         
 
             .callToAction{
-                position: relative;
-                bottom: 350px;
                 left: 30%;
                 width: 40%;
                 line-height: 3rem;
                 background-color: #97BE11;
                 text-align: center;
                 border-radius: 5px;
-                
+                border: 2px solid @main-bg-color;                
                 
                 h4{
                     font-size: 2rem;
@@ -34,6 +33,7 @@
                     .btn-format(80%, 5%);
                     padding: 5%;
                     font-weight: bold;
+                    
                 }
             }
         }// banner

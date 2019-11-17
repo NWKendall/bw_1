@@ -182,12 +182,16 @@ p {
 .container .top .logo h1 {
   color: #A1E6DF;
   font-size: 2rem;
+  text-decoration: none;
 }
 .container .top .logo h1:hover {
   cursor: pointer;
   transform: rotateY(-360deg);
   transition-duration: 1000ms;
   color: #A588B3;
+}
+.container .top .logo a {
+  text-decoration: none;
 }
 .container .top .nav {
   display: flex;
@@ -223,25 +227,25 @@ p {
   font-size: 1rem;
   padding: 1% 0;
 }
-.container header {
-  display: inline-block;
-}
 .container header .banner {
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
+  background: url('../img/share_meal.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
 }
 .container header .banner .callToAction {
-  position: relative;
-  bottom: 350px;
   left: 30%;
   width: 40%;
   line-height: 3rem;
   background-color: #97BE11;
   text-align: center;
   border-radius: 5px;
+  border: 2px solid #28590C;
 }
 .container header .banner .callToAction h4 {
   font-size: 2rem;
@@ -253,7 +257,7 @@ p {
   background-color: #DFE9AC;
   width: 80%;
   font-size: 1.5rem;
-  border: 1px solid #FFA820;
+  border: 2px solid #FFA820;
   border-radius: 5%;
   text-align: center;
   padding: 5%;
@@ -263,6 +267,7 @@ p {
   cursor: pointer;
   color: #DFE9AC;
   background-color: #FFA820;
+  border-color: #28590C;
 }
 .container .about {
   margin: 2% 0;
