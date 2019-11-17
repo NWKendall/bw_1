@@ -1,5 +1,4 @@
 // Home Content
-
 .container{
       
     .banner {
@@ -7,42 +6,73 @@
         align-items: center;
         flex-direction: column;
         justify-content: center;
-        margin: 0;
+        margin: 0 auto;
 
         .main-img {
             display: block;
-            width: 100%;
-            
+            width: 100%;            
         }
 
         .callToAction{
             position: relative;
             bottom: 400px;
-            width: 25%;
-            line-height: 2rem;
+            width: 40%;
+            line-height: 3rem;
             background-color: #97BE11;
             text-align: center;
             border-radius: 5px;
             
             
             h4{
-                font-size: 1.5rem;
+                font-size: 2rem;
                 color:white;
-                margin: 1% 0;
-                padding: 2%;
+                padding: 5%;
+                
             }
 
             .signup {
                 .btn-format(80%, 5%);
-                margin: 2% 0;
-                padding: 2%;
+                padding: 5%;
+                font-weight: bold;
             }
-
         }
+    }// banner
 
+    .about {
+        margin: 5%;
+
+        h2 {
+        text-align: center;
+        }
+        p {
+        text-align: center;
+        }
     }
 
-// row, figure+ caption
-// banner, main-img + cta
+    .middle {
+        display: flex;
+        align-content: center;
+                
+        
+        .feat {
+            width: 100%;
+            text-align: center;
+
+            h2 {
+
+            }
+
+            i{
+                font-size:3rem;
+                margin: 2% 0;
+            }
+        }
+        
+    }
+
+    
+
+
+
 
 } //closes container
