@@ -131,7 +131,6 @@ table {
   padding: 0;
   margin: 0;
   max-width: 100%;
-  border: 1px solid grey !important;
 }
 html {
   font-size: 62.5%;
@@ -227,6 +226,10 @@ p {
   font-size: 1rem;
   padding: 1% 0;
 }
+.container {
+  z-index: 0;
+  background-color: #ebeee2;
+}
 .container header .banner {
   display: flex;
   align-items: center;
@@ -269,25 +272,50 @@ p {
   background-color: #FFA820;
   border-color: #28590C;
 }
-.container .about {
-  margin: 2% 0;
+.container .intro {
+  margin: 5% 0;
   width: 100%;
 }
-.container .about h2 {
+.container .intro h2 {
   text-align: center;
+  margin: 3% 0;
 }
-.container .about p {
+.container .intro p {
   text-align: center;
+  margin: 2% 0;
 }
 .container .middle {
   display: flex;
   align-content: center;
+  margin: 5% 0;
+  padding: 2%;
+  background-color: #DFE9AC;
+  border: 2px solid #FFA820;
 }
 .container .middle .feat {
   width: 100%;
   text-align: center;
 }
+.container .middle .feat h2 {
+  color: #28590C;
+}
 .container .middle .feat i {
   font-size: 3rem;
+  margin: 2% 0;
+  color: #FFA820;
+}
+.container .why {
+  margin: 5% 0;
+  width: 100%;
+  z-index: 0;
+}
+.container .why h2 {
+  text-align: center;
+  z-index: 1;
+  margin: 3% 0;
+}
+.container .why p {
+  text-align: center;
+  z-index: 1;
   margin: 2% 0;
 }
