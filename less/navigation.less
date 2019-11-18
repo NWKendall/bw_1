@@ -4,12 +4,16 @@
     .top {
         display: flex;
         justify-content: space-between;
-        background-color: @main-bg-color;
         align-items: center; 
-        width: 800px;
+        background-color: @main-bg-color;
+        width: 1000px;
         position: fixed;
         margin: 0 auto;     
-        z-index: 500;  
+        z-index: 500; 
+        
+        @media @phone {
+            flex-direction: column;
+        }
 
         .logo {
             display: flex;
@@ -19,14 +23,13 @@
             h1 {
                 color: @main-h-color;
                 font-size: 2rem;
-                .spin(#A588B3);   
-                text-decoration: none;             
+                text-decoration: none;  
+                .spin(@standout-col);                  
             }
+
             a {
                 text-decoration: none;
-            }        
-
-           
+            }       
         }
 
         .nav {
@@ -35,16 +38,23 @@
             width: 25%;
             margin: 2%;
 
+            @media @phone {
+                width: 80%;
+            }             
+
             a {
                 margin: 2%;
                 font-size: 1.5rem;
                 color: @main-h-color;
-                text-decoration: none;             
+                text-decoration: none; 
+
+                @media @phone {
+                    margin: 0 10% ;
+                }                            
             }  
             
             a:hover {
-                color: @standout-col;
-                text-decoration: underline;
+                .nav-hover();
             } 
         } // close nav
     } // close top

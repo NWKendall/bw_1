@@ -16,32 +16,44 @@
             background-size: cover;
             height:500px;         
 
-            .callToAction{ //mixin
+            .callToAction { 
                 width: 40%;
                 line-height: 3rem;
                 background-color: @second-color;
                 text-align: center;
                 border-radius: 5px;
-                border: 2px solid @main-bg-color;                
+                border: 2px solid @main-bg-color; 
                 
-                h4{
+                @media @phone {
+                    width: 60%;
+                }                     
+                
+                h4 {
                     font-size: 2rem;
-                    color: whitesmoke;
+                    color: @white-col;
                     padding: 5%;                    
                 }
 
                 .signup {
                     .btn-format(80%, 5%);
                     padding: 5%;
-                    font-weight: bold;                   
+                    font-weight: bold; 
+                   
+                    @media @phone {
+                        display: inline-block;
+                        padding: 0%;
+                        font-size: 1.5rem;
+                        line-height: 2.5rem;
+                    }                  
                 }
-            }//closes c2a
+            }//closes call to action
         }// banner
     } // header
 
     .intro {
         margin: 5% 0;
         width: 100%;
+        padding: 0 5%;
 
         h2 {
         text-align: center;
@@ -61,43 +73,47 @@
         padding: 2%;
         background-color: @btn-bg;
         
+        @media @phone {
+            flex-direction: column;
+            margin: 2% 10%;
+        }
+        
         .feat {
             width: 100%;
             text-align: center;
-            color: @main-bg-color;           
-
+            color: @main-bg-color; 
+            
+            @media @phone {
+                margin: 5% 0;
+            }           
+           
             i{
                 font-size:3rem;
                 margin: 8% 0;
-                color: @standout-col;
-            }
-        }       
-    }        
+                color: @standout-col;     
+                
+                @media @phone {
+                    font-size: 5rem;
+                }            
+            }       
+        }  
+    } // closes middle  
     
     .why {
         margin: 5% 0;
         width: 100%;
-        z-index: 0;       
-
+        z-index: 0; 
+        
         h2 {
         text-align: center;
         z-index: 1; 
         margin: 3% 0;
-
         }
 
         p {
         text-align: center;
         z-index: 1; 
-        margin: 2% 0;
-
-        }
-    
-    }
-
-    
-
-
-
-
+        margin: 2% 5%;           
+        }    
+    } // closes why
 } //closes container

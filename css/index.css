@@ -159,19 +159,24 @@ p {
   line-height: 1.4;
 }
 .container {
-  max-width: 800px;
+  max-width: 1000px;
   width: 100%;
   margin: 0 auto;
 }
 .container .top {
   display: flex;
   justify-content: space-between;
-  background-color: #28590C;
   align-items: center;
-  width: 800px;
+  background-color: #28590C;
+  width: 1000px;
   position: fixed;
   margin: 0 auto;
   z-index: 500;
+}
+@media (max-width: 500px) {
+  .container .top {
+    flex-direction: column;
+  }
 }
 .container .top .logo {
   display: flex;
@@ -198,18 +203,26 @@ p {
   width: 25%;
   margin: 2%;
 }
+@media (max-width: 500px) {
+  .container .top .nav {
+    width: 80%;
+  }
+}
 .container .top .nav a {
   margin: 2%;
   font-size: 1.5rem;
   color: #A1E6DF;
   text-decoration: none;
 }
-.container .top .nav a:hover {
+@media (max-width: 500px) {
+  .container .top .nav a {
+    margin: 0 10% ;
+  }
+}
+.container .top .nav a:hover:hover {
+  cursor: pointer;
   color: #FFA820;
   text-decoration: underline;
-}
-.container footer {
-  margin: 0 auto;
 }
 .container footer .socialMedia {
   background-color: #DFE9AC;
@@ -253,6 +266,11 @@ p {
   border-radius: 5px;
   border: 2px solid #28590C;
 }
+@media (max-width: 500px) {
+  .container header .banner .callToAction {
+    width: 60%;
+  }
+}
 .container header .banner .callToAction h4 {
   font-size: 2rem;
   color: whitesmoke;
@@ -275,9 +293,18 @@ p {
   background-color: #FFA820;
   border-color: #28590C;
 }
+@media (max-width: 500px) {
+  .container header .banner .callToAction .signup {
+    display: inline-block;
+    padding: 0%;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+}
 .container .intro {
   margin: 5% 0;
   width: 100%;
+  padding: 0 5%;
 }
 .container .intro h2 {
   text-align: center;
@@ -294,15 +321,31 @@ p {
   padding: 2%;
   background-color: #DFE9AC;
 }
+@media (max-width: 500px) {
+  .container .middle {
+    flex-direction: column;
+    margin: 2% 10%;
+  }
+}
 .container .middle .feat {
   width: 100%;
   text-align: center;
   color: #28590C;
 }
+@media (max-width: 500px) {
+  .container .middle .feat {
+    margin: 5% 0;
+  }
+}
 .container .middle .feat i {
   font-size: 3rem;
   margin: 8% 0;
   color: #FFA820;
+}
+@media (max-width: 500px) {
+  .container .middle .feat i {
+    font-size: 5rem;
+  }
 }
 .container .why {
   margin: 5% 0;
@@ -317,7 +360,7 @@ p {
 .container .why p {
   text-align: center;
   z-index: 1;
-  margin: 2% 0;
+  margin: 2% 5%;
 }
 header .team_banner {
   display: flex;
@@ -371,6 +414,11 @@ header .team_banner .team_box .signup:hover {
   flex-flow: row wrap;
   padding: 2%;
 }
+@media (max-width: 500px) {
+  .wrapper {
+    flex-flow: row wrap;
+  }
+}
 .wrapper .card {
   margin: 1%;
   width: 30%;
@@ -383,6 +431,18 @@ header .team_banner .team_box .signup:hover {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   border-radius: 3%;
+}
+@media (max-width: 800px) {
+  .wrapper .card {
+    width: 40%;
+    margin: 2%;
+  }
+}
+@media (max-width: 500px) {
+  .wrapper .card {
+    width: 60%;
+    margin: 2%;
+  }
 }
 .wrapper .card h2 {
   width: 100%;
